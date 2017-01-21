@@ -16,6 +16,7 @@ class Author
   end
 
   def bibliography
+    # go through all the story instances and grab each story's name
     self.stories.collect{|s| s.name} # You need all stories to be instances of Story because they must respond to #name to work
     # @stories.collect(&:name) #=> Symbol to Proc
   end
